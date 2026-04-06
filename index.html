@@ -160,15 +160,14 @@
         }
         .partner-btn:hover, .sponsor-btn:hover { transform: translateY(-3px); background: var(--gold); color: #1a1a2e; }
 
-        /* 交通インフォメーション (ベネチア版: ヴァポレット・ローマ広場) */
+        /* 交通インフォメーション - 縦並びに変更 */
         .info-row {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             gap: 24px;
             margin: 30px 0;
         }
         .info-card {
-            flex: 1;
             background: var(--card-bg);
             border-radius: 20px;
             padding: 20px;
@@ -350,7 +349,7 @@
                 <div class="partner-grid" id="mainPartnerGrid"></div>
             </div>
 
-            <!-- 交通情報: ヴァポレット地図 + ローマ広場マップ -->
+            <!-- 交通情報: ヴァポレット地図 + ローマ広場マップ (縦並び) -->
             <div class="info-row">
                 <div class="info-card">
                     <h3>⛴️ <span id="vaporettoTitle">Vaporetto Map (ACTV)</span></h3>
